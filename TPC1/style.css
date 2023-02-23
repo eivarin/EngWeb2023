@@ -1,0 +1,68 @@
+* {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: aquamarine;
+}
+
+.header {
+  width: 100%;
+  height: 150px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.caixa_bandeira {
+  box-sizing: border-box;
+  padding: 20px;
+  padding-top: 0;
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+}
+.caixa_bandeira .seccao_bandeira {
+  box-sizing: border-box;
+  min-width: 33.3333333333%;
+  flex-grow: 1;
+  padding: 10px 20px;
+}
+.caixa_bandeira .seccao_bandeira h2 {
+  text-align: center;
+}
+.caixa_bandeira .seccao_bandeira .cols {
+  display: flex;
+  width: 100%;
+}
+.caixa_bandeira .seccao_bandeira .cols > * {
+  width: 50%;
+}
+.caixa_bandeira .seccao_bandeira ul {
+  margin: 0;
+}
+.caixa_bandeira .seccao_bandeira ul li {
+  margin: 5px 0;
+}
+.caixa_bandeira .seccao_bandeira .image {
+  max-width: 100%;
+  display: grid;
+  justify-items: center;
+  margin-left: -25px;
+}
+.caixa_bandeira .seccao_bandeira .image img {
+  height: 200px;
+}
+.caixa_bandeira .seccao_bandeira:nth-child(1) {
+  background-color: green;
+}
+.caixa_bandeira .seccao_bandeira:nth-child(2) {
+  background-color: white;
+}
+.caixa_bandeira .seccao_bandeira:nth-child(3) {
+  background-color: red;
+}/*# sourceMappingURL=style.css.map */
