@@ -1,0 +1,15 @@
+BASH:
+mongoimport -d EMD -c exames --file emd.json --jsonArray
+
+MONGOSH:
+use EMD
+db.exames.find()
+
+
+Respostas:
+db.exames.countDocuments()
+db.exames.countDocuments({"resultado": true})
+db.exames.aggregate({ $group: {'_id': '$género', total: {$count : {}}}})
+db.exames.aggregate({ $group: {'_id': '$modalidade', total: {$count : {}}}})
+db.exames.aggregate({ $match: { clube: "GDGoma", federado: true}}, {$count: "GDGoma jogadores federados"})
+db.exames.aggregate({ $match: { 'género': "F", modalidade: "Triatlo"}}, {$count: "Atletas femininos de triatlo"})
